@@ -2,7 +2,7 @@ import random
 import os
 import time
 
-def limpia():
+def limpia():   #limpia consola
     os.system("cls")
 
 def limpiaTiempo(): #Función para limpiar despúes de 3 segundos
