@@ -9,6 +9,27 @@ def limpiaTiempo(): #Función para limpiar despúes de 3 segundos
     time.sleep(3)       #Espera 3 segundos antes de borrar
     os.system('cls')    #Borra la consola
 
+def menuMemorama():     #Muestra el título del memorama
+    limpia()
+    print("-------------------------------------------------------------------------------------------------------------------------------\n\
+    ███╗░░░███╗░█████╗░████████╗░█████╗░██╗░░██╗██╗███╗░░██╗░██████╗░  ░██████╗░░█████╗░███╗░░░███╗███████╗\n\
+    ████╗░████║██╔══██╗╚══██╔══╝██╔══██╗██║░░██║██║████╗░██║██╔════╝░  ██╔════╝░██╔══██╗████╗░████║██╔════╝\n\
+    ██╔████╔██║███████║░░░██║░░░██║░░╚═╝███████║██║██╔██╗██║██║░░██╗░  ██║░░██╗░███████║██╔████╔██║█████╗░░\n\
+    ██║╚██╔╝██║██╔══██║░░░██║░░░██║░░██╗██╔══██║██║██║╚████║██║░░╚██╗  ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░\n\
+    ██║░╚═╝░██║██║░░██║░░░██║░░░╚█████╔╝██║░░██║██║██║░╚███║╚██████╔╝  ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗\n\
+    ╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░  ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝\n")
+
+def reglasMemorama():   #Muestra las reglas del memorama
+    print("Instrucciones para jugar: \
+    \n\t*Todos los pares se revuelven y se colocan boca abajo en un tablero, mesa o en el suelo.\
+    \n\t*Es un juego de competencia, memoria y matemáticas entre dos jugadores.\
+    \n\t*En tu turno puedes levantar dos cartas:\
+    \n\t\t**Si el resultado de la operación de las dos fichas levantadas es igual, ya tienes un par,\
+    \n\t\t**Si dichas cartas no son iguales entonces vuelven a taparse y ahora es el turno del otro jugador.\
+    \n\t*El juego debe continuar hasta que se acaben todas las cartas que están boca abajo.\
+    \n\t*GANA cuando todas las cartas queden boca arriba el que más puntos tenga.\
+    \n-------------------------------------------------------------------------------------------------------------------------------\n\n")
+
 def tableroBooleano(eleccion):      #Tablero booleando de la elección del usuario para una fácil manipulación de datos
     tablero_booleano = []
 
@@ -219,6 +240,8 @@ def validacionMenu(eleccion):
                 
 
 #Main
+menuMemorama()
+reglasMemorama()
 
 validacion_menu = True
 
